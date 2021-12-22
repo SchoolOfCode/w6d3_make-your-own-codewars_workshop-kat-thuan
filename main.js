@@ -1,34 +1,8 @@
 /* 
-👉 Write your kata here!
-*/
+School of Code Final Grade
 
-//👉 Write the function your CodeWarriors will start with below here:
-
-
-
-
-
-/*
-School of Code Grade
-
-takes inputs of (projects, daily test)
-project score - 90+
-daily test completed- 40-48
-return final grade - "A - You're getting hired"
-
-project score - 80-89
-daily test completed- 30-39
-return final grade - "B - You're doing well"
-
-project score - 60-79
-daily test completed- 20-29
-return final grade - "C - Come to code camp"
-
-project score - Less than 60
-daily test completed- Less than 20
-return final grade - "F - Do your recap tasks again""
-
-Create a function called SOCfinalGrade, which calculates the final grade of a student depending on two parameters: a grade for the project and a number of completed daily tests.
+--> INSTRUCTIONS
+Create a function called SOCfinalGrade, which calculates the final grade of a student depending on two parameters: a grade for the final project and the number of completed daily tests.
 
 This function should take two arguments: project- grade for project (from 0 to 100); daily tests - number of completed tests (from 0 to 48);
 
@@ -48,3 +22,9 @@ Examples(Inputs-->Output):
 65, 25 --> "C - Come to code camp"
 
 */
+
+//👉 Write the function your CodeWarriors will start with below here:
+
+function SOCfinalGrade(project, dailytests) {
+  return; // final grade
+}
