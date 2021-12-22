@@ -8,7 +8,7 @@ This function should take two arguments: project- grade for project (from 0 to 1
 
 This function should return a string (final grade). There are four types of final grades:
 
-- If project score is over 90 and the number of daily tests completed is over 40, then give them the final grade "A - You're getting hired "
+- If project score is over 90 and the number of daily tests completed is 40 or over, then give them the final grade "A - You're getting hired "
 
 - If project score is between 80-89 and the number of daily tests completed is 30-39, then give them the final grade "B - You're doing well "
 
@@ -25,6 +25,19 @@ Examples(Inputs-->Output):
 
 //👉 Write the function your CodeWarriors will start with below here:
 
-function SOCfinalGrade(project, dailytests) {
-  return; // final grade
-}
+// function SOCfinalGrade(project, dailytests) {
+//   return; // final grade
+// }
+
+function SOCfinalGrade (project, dailytests) {
+  if (project > 90 && dailytests >= 40){
+  return "A - You're getting hired"};
+  if (project >= 80 <=89  && dailytests >= 30 <= 39){
+  return "B - You're doing well"};
+  if (project >= 60 <= 79 && dailytests >= 20 <= 29){
+  return "C - Come to code camp"};
+  if (project < 60 && dailytests < 20){
+    return "F - Do your recap tasks again"}
+   }
+
+export default SOCfinalGrade;

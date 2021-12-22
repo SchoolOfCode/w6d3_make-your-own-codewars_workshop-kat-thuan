@@ -1,3 +1,4 @@
+import SOCfinalGrade from "./main.js";
 //👉 Write your tests below here:
 
 /*
@@ -20,3 +21,16 @@ project score - Less than 60
 daily test completed- Less than 20
 return final grade - "F - Do your recap tasks again"
 */
+
+test("Given a project score, and a daily test score, SOCfinalGrade function returns the correct final grade based on these criteria", () => {
+    //arrange
+let project = 100;
+let dailytests = 48;
+let expected = "A - You're getting hired";
+    
+//act 
+let actual = SOCfinalGrade(project, dailytests);
+
+    //assert
+    expect(actual).toBe(expected);
+});
