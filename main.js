@@ -29,15 +29,26 @@ Examples(Inputs-->Output):
 //   return; // final grade
 // }
 
-function SOCfinalGrade (project, dailytests) {
-  if (project > 90 && dailytests >= 40){
-  return "A - You're getting hired"};
-  if (project >= 80 <=89  && dailytests >= 30 <= 39){
-  return "B - You're doing well"};
-  if (project >= 60 <= 79 && dailytests >= 20 <= 29){
-  return "C - Come to code camp"};
-  if (project < 60 && dailytests < 20){
-    return "F - Do your recap tasks again"}
-   }
+function SOCfinalGrade(project, dailytests) {
+  if (project >= 90 && dailytests >= 40) {
+    return "A - You're getting hired";
+  } else if (
+    project >= 80 &&
+    project <= 89 &&
+    dailytests >= 30 &&
+    dailytests <= 39
+  ) {
+    return "B - You're doing well";
+  } else if (
+    project >= 60 &&
+    project <= 79 &&
+    dailytests >= 20 &&
+    dailytests <= 29
+  ) {
+    return "C - Come to code camp";
+  } else if (project < 60 && dailytests < 20) {
+    return "F - Do your recap tasks again";
+  }
+}
 
 export default SOCfinalGrade;
